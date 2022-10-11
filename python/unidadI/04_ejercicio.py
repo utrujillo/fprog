@@ -1,8 +1,8 @@
 # Los dias Sabado y Domingo:
 # - Es fin de semana, no trabajar
-# Los dias pares regresar:
+# Los dias pares regresar: martes y jueves
 # - Hacer tareas
-# Los dias impares regresar:
+# Los dias impares regresar: los demas
 # - Date tiempo para ir al parque a pasear
 dia='martes'
 
