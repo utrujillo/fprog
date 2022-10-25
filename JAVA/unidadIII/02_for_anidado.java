@@ -8,6 +8,5 @@ class Ejercicio {
         System.out.println( a_inicio +"     "+ m_inicio +"      monto" );
       }
     }
-
   }
 }
