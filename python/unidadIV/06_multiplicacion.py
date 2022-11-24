@@ -4,7 +4,7 @@ matrixA = [
 ]
 
 matrixB= [
-  [4, 5],
+  [4,],
   [2, 4],
   [4, 5],
 ]
@@ -12,25 +12,21 @@ matrixB= [
 rowMatrixA = len(matrixA)
 rowMatrixB = len(matrixB) 
 
-matrixACompare = True
-columnsA = 0
-for index in range(0, len(matrixA)):
-  if( index == 0 ):
-    columnsA = len(matrixA[index])
-  else:
-    if( columnsA != len(matrixA[index]) ):
-      matrixACompare = False
+def matrixCompare(matrix):
+  matrixCompare = True
+  columns = 0
+  for index in range(0, len(matrix)):
+    if( index == 0 ):
+      columns = len(matrix[index])
+    else:
+      if( columns != len(matrix[index]) ):
+        matrixCompare = False
+  return matrixCompare
 
-matrixBCompare = True
-columnsB = 0
-for index in range(0, len(matrixB)):
-  if( index == 0 ):
-    columnsB = len(matrixB[index])
-  else:
-    if( columnsB != len(matrixB[index]) ):
-      matrixBCompare = False
+matrixACompare = matrixCompare(matrixA)
+matrixBCompare = matrixCompare(matrixB)
 
 if( matrixACompare == True and matrixBCompare == True ):
-  print( 'Matrix a ', rowMatrixA, 'x', columnsA )
-  print( 'Matrix a ', rowMatrixB, 'x', columnsB )
-
+  print( 'Se puede multiplicar' )
+else:
+  print('No se puede multiplicar')
